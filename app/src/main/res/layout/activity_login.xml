@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/putih"
+    tools:context=".user.loginActivity">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:src="@drawable/icon" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:labelText="UserName"
+                >
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:id="@+id/edtusername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:labelText="Password"
+                android:layout_marginTop="15dp"
+                >
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:id="@+id/edtpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    />
+
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/btnlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                app:nb_text="Masuk"
+                app:nb_borderColor="#FFFFFF"
+                app:nb_borderWidth="2dp"
+                app:nb_backgroundColor="@color/colorPrimary"
+                app:nb_focusColor="#B83CC3"
+                app:nb_textColor="#FFF"
+                app:nb_radius="5dp"/>
+
+
+            <Button
+                android:id="@+id/btnregis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Belum Punya Akun ? Daftar Disini !"
+                android:background="@null"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+</LinearLayout>
